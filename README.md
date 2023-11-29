@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Аскар Яминов](https://up.htmlacademy.ru/adaptive/30/user/2304867).
-* Наставник: `Ирина Малиновская`.(https://htmlacademy.ru/profile/irina-malinovskaya)
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya)
 
 ---
 
