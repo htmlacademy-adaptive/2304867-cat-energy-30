@@ -2,29 +2,34 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>каталог</title>
+  <title>Каталог</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png" type="image/png+xml">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
   <header class="main-header">
     <nav class="main-nav">
-      <a class="main-header__logo-primary">
-        <img src="images/header_logo_primary.svg" width="33" height="38" alt="Лого магазина с аватаром">
-      </a>
-      <a class="main-header__logo-secondary">
-        <img src="images/header_logo_secondary.svg" width="101" height="18" alt="Лого магазина с текстом">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source type="image/svg+xml" width="202" height="59" media="(min-width: 1440px)" srcset="images/desc_header_logo.svg">
+          <source type="image/svg+xml" width="174" height="50" media="(min-width: 768px)" srcset="images/tablet_header_logo.svg">
+          <img class="main-header__logo-image" src="images/mobile_header_logo.svg" width="33" height="38" alt="Лого магазина">
+        </picture>
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a>каталог продукции</a>
+            <a>Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">подбор программы</a>
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -36,7 +41,11 @@
       <h2 class="catalog__title">Каталог продукции</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <img src="#" width="68" height="86" alt="Cat Energy PRO 500 г со вкусом курицы">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" widt="161" height="172" srcset="images/desc_cat_chicken_500@1x.png 1x, desc_cat_chicken_500@2x 2x">
+            <source type="image/png" media="(min-width: 768px)" width="161" height="172" srcset="images/tablet_cat_chicken_500@1x.png 1x, images/tablet_cat_chicken_500@2x.png 2x">
+            <img src="images/mobile_cat_chicken_500@1x.png" srcset="images/mobile_cat_chicken_500@2x.png 2x" width="68" height="86" alt="Cat Energy PRO 500 г со вкусом курицы">
+          </picture>
           <h3 class="catalog__item-title">Cat Energy PRO 500 г</h3>
           <div class="characteristic">
             <dl class="characteristic__block">
@@ -69,7 +78,11 @@
           <button class="order-button button" type="button">заказать</button>
         </li>
         <li class="catalog__item">
-          <img src="#" width="68" height="86" alt="Cat Energy PRO 1000 г со вкусом курицы">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" width="172" height="196" srcset="images/desc_cat_chicken_1000@1x.png 1x, images/desc_cat_chicken_1000@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" width="168" height="206" srcset="images/tablet_cat_chicken_1000@1x.png 1x, images/tablet_cat_chicken_1000@2x.png 2x">
+            <img src="images/mobile_cat_chicken_1000@1x.png" srcset="images/mobile_cat_chicken_1000@2x.png 2x" width="84" height="100" alt="Cat Energy PRO 1000 г со вкусом курицы">
+          </picture>
           <h3 class="catalog__item-title">Cat Energy PRO 1000 г</h3>
           <div class="characteristic">
             <dl class="characteristic__block">
@@ -102,7 +115,11 @@
           <button class="order-button button" type="button">заказать</button>
         </li>
         <li class="catalog__item">
-          <img src="#" width="68" height="86" alt="Cat Energy PRO 500 г со вкусом рыбы">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" width="163" height="174" srcset="images/desc_cat_fish_500@1x.png 1x, images/desc_cat_fish_500@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" width="163" height="174" srcset="images/tablet_cat_fish_500@1x.png 1x, images/tablet_cat_fish_500@2x.png 2x">
+            <img src="images/mobile_cat_fish_500@1x.png" srcset="images/mobile_cat_fish_500@2x.png 2x" width="68" height="78" alt="Cat Energy PRO 500 г со вкусом рыбы">
+          </picture>
           <h3 class="catalog__item-title">Cat Energy PRO 500 г</h3>
           <div class="characteristic">
             <dl class="characteristic__block">
@@ -135,7 +152,11 @@
           <button class="order-button button" type="button">заказать</button>
         </li>
         <li class="catalog__item">
-          <img src="#" width="68" height="86" alt="Cat Energy PRO 1000 г со вкусом рыбы">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" width="172" height="196" srcset="images/desc_cat_fish_1000@1x.png 1x, images/desc_cat_fish_1000@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" width="168" height="200" srcset="images/tablet_cat_fish_1000@1x.png 1x, images/tablet_fish_chicken_1000@2x.png 2x">
+            <img src="images/mobile_cat_fish_1000@1x.png" srcset="images/mobile_cat_fish_1000@2x.png 2x" width="68" height="78" alt="Cat Energy PRO 500 г со вкусом рыбы">
+          </picture>
           <h3 class="catalog__item-title">Cat Energy PRO 1000 г</h3>
           <div class="characteristic">
             <dl class="characteristic__block">
@@ -168,7 +189,11 @@
           <button class="order-button button" type="button">заказать</button>
         </li>
         <li class="catalog__item">
-          <img src="#" width="68" height="86" alt="Cat Energy SLIM 500 г со вкусом гречки">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" width="172" height="196" srcset="images/desc_cat_buckwheat_500@1x.png 1x, images/desc_cat_buckwheat_500@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" width="161" height="171" srcset="images/tablet_cat_buckwheat_500@1x.png 1x, images/tablet_cat_buckwheat_500@2x.png 2x">
+            <img src="images/mobile_cat_buckwheat_500@1x.png" srcset="images/mobile_cat_buckwheat_500@2x.png 2x" width="68" height="78" alt="Cat Energy SLIM 500 г со вкусом гречки">
+          </picture>
           <h3 class="catalog__item-title">Cat Energy SLIM 500 г</h3>
           <div class="characteristic">
             <dl class="characteristic__block">
@@ -201,7 +226,11 @@
           <button class="order-button button" type="button">заказать</button>
         </li>
         <li class="catalog__item">
-          <img src="#" width="68" height="86" alt="Cat Energy SLIM 1000 г со вкусом гречки">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" width="172" height="196" srcset="images/desc_cat_buckwheat_1000@1x.png 1x, images/desc_cat_buckwheat_1000@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" width="168" height="200" srcset="images/tablet_cat_buckwheat_1000@1x.png 1x, images/tablet_cat_buckwheat_1000@2x.png 2x">
+            <img src="images/mobile_cat_buckwheat_1000@1x.png" srcset="images/mobile_cat_buckwheat_1000@2x.png 2x" width="84" height="100" alt="Cat Energy SLIM 1000 г со вкусом гречки">
+          </picture>
           <h3 class="catalog__item-title">Cat Energy SLIM 1000 г</h3>
           <div class="characteristic">
             <dl class="characteristic__block">
@@ -234,7 +263,11 @@
           <button class="order-button button" type="button">заказать</button>
         </li>
         <li class="catalog__item">
-          <img src="#" width="68" height="86" alt="Cat Energy SLIM 500 г со вкусом риса">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" widt="163" height="174" srcset="images/desc_cat_rice_500@1x.png 1x, desc_cat_rice_500@2x 2x">
+            <source type="image/png" media="(min-width: 768px)" width="163" height="174" srcset="images/tablet_cat_rice_500@1x.png 1x, images/tablet_cat_rice_500@2x.png 2x">
+            <img src="images/mobile_cat_rice_500@1x.png" srcset="images/mobile_cat_rice_500@2x.png 2x" width="72" height="84" alt="Cat Energy SLIM 500 г со вкусом риса">
+          </picture>
           <h3 class="catalog__item-title">Cat Energy SLIM 500 г</h3>
           <div class="characteristic">
             <dl class="characteristic__block">
