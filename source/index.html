@@ -3,28 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Кэт Энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png" type="image/png+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="page__body">
   <header class="main-header">
     <nav class="main-nav">
-      <a class="main-header__logo-primary">
-        <img src="images/header_logo_primary.svg" width="33" height="38" alt="Лого магазина с аватаром">
-      </a>
-      <a class="main-header__logo-secondary">
-        <img src="images/header_logo_secondary.svg" width="101" height="18" alt="Лого магазина с текстом">
+      <a class="main-header__logo">
+        <picture>
+          <source type="image/svg+xml" width="202" height="59" media="(min-width: 1440px)" srcset="images/desc_header_logo.svg">
+          <source type="image/svg+xml" width="174" height="50" media="(min-width: 768px)" srcset="images/tablet_header_logo.svg">
+          <img class="main-header__logo-image" src="images/mobile_header_logo.svg" width="33" height="38" alt="Лого магазина">
+        </picture>
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>главная</a>
+            <a>Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">каталог продукции</a>
+            <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">подбор программы</a>
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -38,7 +44,11 @@
           <h2 class="hero__header-title">Функциональное питание для котов</h2>
         </header>
           <p class="hero__description">Занялся собой? Займись котом!</p>
-          <img class="hero__image" src="images/promo_picture.png" width="280" height="270" alt="Картинка-промо продукта">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/desc_index_can@1x.png 1x, images/desc_index_can@2x.png 2x" width="552" height="499">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/tablet_index_can@1x.png 1x, images/tablet_index_can@2x.png 2x" width="709" height="609">
+            <img class="hero__image" src="images/mobile_index_can@1x.png" srcset="images/mobile_index_can@2x.png 2x" width="280" height="270" alt="Картинка-промо продукта">
+          </picture>
           <a class="hero__button button" href="#">подобрать программу</a>
       </div>
     </section>
@@ -111,8 +121,10 @@
     </section>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__logo">
-        <img class="footer-logo" src="images/footer_logo.svg" alt="Лого магазина с текстом(подвал)">
+        <div class="main-footer__logo logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__image" src="images/footer_logo.svg" alt="Лого магазина с текстом(подвал)">
+          </a>
       </div>
       <div class="main-footer__social social">
         <ul class="social__list">
