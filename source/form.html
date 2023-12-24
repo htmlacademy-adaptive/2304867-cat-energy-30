@@ -7,6 +7,8 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png" type="image/png+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
 <body class="page__body">
   <header class="main-header">
     <nav class="main-nav">
@@ -87,8 +89,10 @@
             </li>
           </ul>
         </fieldset>
-        <p class="comment-description">Комментарий</p>
-        <textarea class="comment-text" name="comment" id="comment-field">Расскажите обо всех повадках кота</textarea>
+        <div class="comment-container">
+          <p class="comment-container__description">Комментарий</p>
+          <textarea class="comment-container__text" name="comment" id="comment-field">Расскажите обо всех повадках кота</textarea>
+        </div>
         <fieldset class="selection__field option-field">
           <legend class="option-field__title">Дополнительно</legend>
           <ul class="option-field__list">
@@ -110,8 +114,10 @@
             </li>
           </ul>
         </fieldset>
-        <button class="selection__button button" type="submit">отправить заявку</button>
-        <p class="selection__notation">* — Обязательные поля</p>
+        <div class="application-wrapper">
+          <button class="application-wrapper__button button" type="submit">отправить заявку</button>
+          <p class="application-wrapper__notation">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
     <section class="contacts">
@@ -123,6 +129,7 @@
     <section class="location">
       <img class="location__map" src="images/location_map.jpg" alt="Местонахождение магазина на карте">
     </section>
+  </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo logo">
@@ -161,6 +168,5 @@
       </div>
       </div>
     </footer>
-  </main>
 </body>
 </html>

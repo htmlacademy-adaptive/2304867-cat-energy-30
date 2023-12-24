@@ -1,11 +1,13 @@
 /* GLOBAL */
-@import "./global/common.scss";
-@import "./global/fonts.scss";
 @import "./global/variables.scss";
+@import "./global/mixins.scss";
+@import "./global/fonts.scss";
+@import "./global/common.scss";
 @import "./global/global.scss";
 @import "./global/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/button.scss";
 @import "./blocks/header.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
@@ -21,3 +23,15 @@
 @import "./blocks/main-footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
+@import "./blocks/form.scss";
+@import "./blocks/selection.scss";
+@import "./blocks/option-field.scss";
+@import "./blocks/comment-container.scss";
+@import "./blocks/application-wrapper.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/characteristics.scss";
+@import "./blocks/show-more-button.scss";
+@import "./blocks/extra-catalog.scss";
+@import "./blocks/extra-item.scss";
+@import "./blocks/extra-product-description.scss";
+@import "./blocks/gift-promo.scss";
