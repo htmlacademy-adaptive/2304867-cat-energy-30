@@ -1,14 +1,55 @@
 .hero {
   font-family: "Oswald", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+  }
 }
 
-.hero__header {
+.hero__header-title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding-top: 27px;
+  padding-left: 35px;
+  padding-right: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    width: 420px;
+    margin-top: 65px;
+    margin-left: 120px;
+    margin-right: 234px;
+    padding: 0;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 110px auto 40px 190px;
+  }
 }
 
 .hero__description {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin: 40px 365px 21px 120px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 40px auto 52px 190px;
+    text-align: start;
+  }
 }
+
+.hero__wrapper {
+  text-align: center;
+}
+

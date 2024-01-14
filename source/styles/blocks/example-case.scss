@@ -1,25 +1,59 @@
+.example-case {
+  background-color: $bg-alt-grey;
+}
+
+.example-case__wrapper {
+  padding: 25px 20px 20px 20px;
+}
+
 .example-case__title {
   font-family: "oswald", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  margin: 0 auto;
+}
+
+.example-case__container {
+}
+
+.example-case__list {
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-between;
 }
 
 .example-case__item-title {
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .example-case__description {
   font-size: 12px;
   line-height: 12px;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.example-case__item-description {
+  margin: 0;
 }
 
 .example-case__item-description-expenses {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  text-transform: uppercase;
   color: #000000;
+  text-align: center;
 }

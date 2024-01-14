@@ -11,26 +11,26 @@
 </head>
 <body class="page__body">
   <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <picture>
+        <source type="image/svg+xml" width="202" height="59" media="(min-width: 1440px)" srcset="images/desc_header_logo.svg">
+        <source type="image/svg+xml" width="174" height="50" media="(min-width: 768px)" srcset="images/tablet_header_logo.svg">
+        <img class="main-header__logo-image" src="images/mobile_header_logo.svg" width="33" height="38" alt="Лого магазина">
+      </picture>
+    </a>
     <nav class="main-nav">
-      <a class="main-header__logo" href="index.html">
-        <picture>
-          <source type="image/svg+xml" width="202" height="59" media="(min-width: 1440px)" srcset="images/desc_header_logo.svg">
-          <source type="image/svg+xml" width="174" height="50" media="(min-width: 768px)" srcset="images/tablet_header_logo.svg">
-          <img class="main-header__logo-image" src="images/mobile_header_logo.svg" width="33" height="38" alt="Лого магазина">
-        </picture>
-      </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
+            <a class="site-list__item-link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a>Каталог продукции</a>
+            <a class="site-list__item-link">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-list__item-link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
