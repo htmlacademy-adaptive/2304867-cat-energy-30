@@ -1,5 +1,44 @@
+.option-field {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .option-field__title {
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $basic-black;
 }
+
+.option-field__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.option-field__item {
+  padding: 13px 0;
+}
+
+.option-field__fill {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 14px 0;
+  text-transform: uppercase;
+  color: $base-color-text;
+  border: 1px solid $border-around-grey;
+}
+
+.option-field__list--radio {
+  list-style: none;
+  margin: 0;
+  padding: 22px 0 19px;
+  border-bottom: 1px solid $border-alt-grey;
+  border-top: 1px solid $border-alt-grey;
+}
+
+.option-field__list--radio li:not(:last-child) {
+  margin-bottom: 13px;
+}
+

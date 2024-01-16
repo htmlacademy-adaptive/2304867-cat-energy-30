@@ -14,9 +14,14 @@
   <header class="main-header">
     <a class="main-header__logo">
       <picture>
-        <source type="image/svg+xml" width="202" height="59" media="(min-width: 1440px)" srcset="images/desc_header_logo.svg">
-        <source type="image/svg+xml" width="174" height="50" media="(min-width: 768px)" srcset="images/tablet_header_logo.svg">
+        <source type="image/svg+xml" width="70" height="59" media="(min-width: 1440px)" srcset="images/desc_header_logo.svg">
+        <source type="image/svg+xml" width="60" height="50" media="(min-width: 768px)" srcset="images/tablet_header_logo.svg">
         <img class="main-header__logo-image" src="images/mobile_header_logo.svg" width="33" height="38" alt="Лого магазина">
+      </picture>
+      <picture>
+        <source type="image/svg+xml" width="118" height="21" media="(min-width: 1440px)" srcset="images/desc_header_logo_text.svg">
+        <source type="image/svg+xml" width="101" height="18" media="(min-width: 768px)" srcset="images/tablet_header_logo_text.svg">
+        <img class="main-header__logo-image" src="images/mobile_header_logo_text.svg" width="101" height="18" alt="Лого магазина">
       </picture>
     </a>
     <nav class="main-nav">
@@ -43,8 +48,8 @@
       <div class="hero__wrapper">
         <header class="hero__header">
           <h2 class="hero__header-title">Функциональное питание для котов</h2>
+          <p class="hero__header-description">Занялся собой? Займись котом!</p>
         </header>
-          <p class="hero__description">Занялся собой? Займись котом!</p>
           <picture>
             <source type="image/png" media="(min-width: 1440px)" srcset="images/desc_index_can@1x.png 1x, images/desc_index_can@2x.png 2x" width="552" height="499">
             <source type="image/png" media="(min-width: 768px)" srcset="images/tablet_index_can@1x.png 1x, images/tablet_index_can@2x.png 2x" width="709" height="609">
@@ -75,6 +80,11 @@
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--useful-food">
+            <div class="advantages__item-icon">
+              <svg width="25" height="28">
+                <use href="images/icons/icon_leaf.svg"></use>
+              </svg>
+            </div>
             <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="advantages__item advantages__item--shape">
@@ -105,12 +115,12 @@
             <p class="example-case__item-description">затрачено времени</p>
           </li>
         </ul>
-      </div>
-      <p class="example-case__item-description-expenses">Затраты на питание: 15 000 РУБ.</p>
+        <p class="example-case__item-description-expenses">Затраты на питание: 15 000 РУБ.</p>
+    </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <b class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</b>
+        <b class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</b>
         <p class="contacts__information">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
     </section>
@@ -148,7 +158,7 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <p>HTML Academy</p>
+        <p class="copyright__text-link">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/study">
           <img class="copyright__logo" src="images/htmlacademy_logo_footer.svg" width="27" height="34" alt="Лого Академии">
           <span class="visually-hidden">HTML-Academy</span>

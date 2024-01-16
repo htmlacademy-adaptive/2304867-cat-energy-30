@@ -1,3 +1,13 @@
 .extra-product-description {
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.extra-product-description__list {
+  display: flex;
+  justify-content: space-between;
 }

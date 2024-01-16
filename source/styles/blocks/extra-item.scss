@@ -1,7 +1,30 @@
+.extra-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 38px;
+  }
+}
+
 .extra-item__title {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  color: #222222;
+  font-weight: 400;
+  color: $special-dark;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

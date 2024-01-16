@@ -1,7 +1,26 @@
+.contacts {
+  @media (min-width: $desktop-width) {
+    width: 565px;
+  }
+}
+
 .contacts__wrapper {
-  padding: 26px 20px 26px 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 26px 0;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    gap: 308px;
+    padding: 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 407px;
+    gap: 87px;
+  }
 }
 
 .contacts__title {
@@ -11,9 +30,15 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  width: 50%;
 }
 
 .contacts__information {
   line-height: 20px;
   margin: 0;
+  width: 50%;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }

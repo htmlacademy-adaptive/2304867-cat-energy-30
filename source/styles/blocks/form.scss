@@ -1,12 +1,22 @@
+.form {
+  border-top: 1px solid $border-alt-grey;
+}
+
 .form__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   color: #000000;
+  padding-top: 27px;
+  margin: 0;
+  margin-bottom: 37px;
 }
 
 .form__description {
   font-family: "Oswald", sans-serif;
-  color: #000000;
+  color: $basic-black;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 39px;
 }

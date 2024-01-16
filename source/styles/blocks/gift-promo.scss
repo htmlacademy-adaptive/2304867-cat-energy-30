@@ -1,9 +1,23 @@
 .gift-promo {
-  background-color: #68b738d9;
+  background-color: $bg-alt-green;
+  text-align: center;
+  margin: 35px auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 70px auto 75px;
+    text-align: start;
+    width: 708px;
+  }
 }
 
 .gift-promo__description {
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $basic-white;
+  padding: 187px 61px 43px 58px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 125px 69px 421px;
+  }
 }

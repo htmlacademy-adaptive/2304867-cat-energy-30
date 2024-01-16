@@ -1,12 +1,12 @@
 .social__list {
   display: flex;
-  width: 132px;
   justify-content: center;
   margin: 0 auto;
-  padding: 0;
+  padding: 8px 0;
   list-style: none;
-}
+  gap: 24px;
 
-.social__item {
-  margin-right: 24px;
+  @media (min-width: $tablet-width) {
+    min-width: 132px;
+  }
 }

@@ -1,8 +1,19 @@
 .hero {
   font-family: "Oswald", sans-serif;
+  background-color: $bg-alt-green;
+  color: $basic-white;
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
+    background-color: inherit;
+  }
+}
+
+.hero__wrapper {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+
   }
 }
 
@@ -31,7 +42,7 @@
   }
 }
 
-.hero__description {
+.hero__header-description {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -49,7 +60,9 @@
   }
 }
 
-.hero__wrapper {
-  text-align: center;
+.hero__button {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
-

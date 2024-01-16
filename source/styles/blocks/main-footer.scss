@@ -1,11 +1,27 @@
 .main-footer {
+  background-color: $bg-basic-grey;
+}
+
+.main-footer__wrapper {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 55px 0;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+    padding: 66px 0;
+  }
 }
 
 .main-footer__logo {
   text-align: center;
-  margin-top: 40px;
 }
-
