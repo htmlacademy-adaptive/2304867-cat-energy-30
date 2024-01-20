@@ -2,5 +2,27 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.selection__wrapper-contacts {
+  margin-top: 26px;
+}
+
+.selection__wrapper-extra {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.selection__wrapper-programm {
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-around-grey;
+  }
 }
 

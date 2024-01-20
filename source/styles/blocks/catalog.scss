@@ -93,7 +93,7 @@
   color: $special-dark;
   margin: 0;
   padding: 0;
-  margin-right: 64px;
+  margin-bottom: 14px;
   font-weight: 400;
   text-align: start;
 
@@ -122,6 +122,10 @@
   flex-direction: column;
   justify-content: center;
   border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $bg-basic-grey;
+  }
 }
 
 .catalog__item-title--extra {

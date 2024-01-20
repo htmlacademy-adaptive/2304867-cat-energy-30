@@ -8,6 +8,11 @@
     text-align: start;
     width: 708px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 0 auto;
+  }
 }
 
 .gift-promo__description {

@@ -8,37 +8,153 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
+  text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .option-field__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .option-field__item {
-  padding: 13px 0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.option-field__item:last-child {
+  margin-bottom: 0;
+}
+
+.option-field__label {
 }
 
 .option-field__fill {
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
-  padding: 14px 0;
+  padding: 14px 0 13px 15px;
   text-transform: uppercase;
-  color: $base-color-text;
   border: 1px solid $border-around-grey;
+  flex-grow: 1;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 11px 0 11px 20px;
+  }
 }
 
 .option-field__list--radio {
   list-style: none;
   margin: 0;
   padding: 22px 0 19px;
-  border-bottom: 1px solid $border-alt-grey;
-  border-top: 1px solid $border-alt-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 0 27px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 0 25px 28px;
+  }
+}
+
+.option-field__item--radio {
+  display: flex;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
 }
 
 .option-field__list--radio li:not(:last-child) {
   margin-bottom: 13px;
 }
 
+.option-field__radio {
+  margin: 0;
+}
+
+.option-field__label--radio {
+  padding: 6px 0;
+
+  @media (min-width: $tablet-width) {
+    gap: 5px 0;
+  }
+}
+
+.option-field__list--check {
+  list-style: none;
+  margin: 34px 0;
+  padding: 0;
+  gap: 13px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    margin: 57px 0 52px;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+    gap: 0;
+  }
+}
+
+.option-field__item--check {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    flex-basis: 25%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: auto;
+  }
+}
+
+.option-field__label--check {
+  padding: 6px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 0;
+  }
+}
+
+.option-field__check {
+  border: 1px solid $border-special-grey;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}

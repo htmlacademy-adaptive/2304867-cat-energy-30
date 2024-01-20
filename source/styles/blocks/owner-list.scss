@@ -1,0 +1,16 @@
+.owner-list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    gap: 80px;
+    padding: 0;
+  }
+}
+
+.owner-list__item {
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    margin: 0;
+  }
+}
