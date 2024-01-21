@@ -10,13 +10,28 @@
 }
 
 .selection__wrapper-contacts {
-  margin-top: 26px;
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px
+  }
 }
 
 .selection__wrapper-extra {
+  padding-top: 23px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
   }
 }
 
@@ -26,3 +41,14 @@
   }
 }
 
+.selection__wrapper-name {
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}

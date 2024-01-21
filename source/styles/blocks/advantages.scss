@@ -50,6 +50,7 @@
 }
 
 .advantages__item {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,4 +77,21 @@
   }
 }
 
+.advantages__item-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  justify-content: center;
+  width: 60px;
+}
+
+.advantages__item-icon::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-basic-green;
+  z-index: -1;
+}
 

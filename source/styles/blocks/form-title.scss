@@ -3,20 +3,9 @@
   line-height: 26px;
   color: $basic-black;
   text-transform: none;
-  width: 100%;
-  max-width: 280px;
-  margin: 0 auto;
-  margin-top: 23px;
-  padding: 0;
 
   @media (min-width: $tablet-width) {
-    max-width: 709px;
-    margin-top: 65px;
     font-size: 36px;
     line-height: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1220px;
   }
 }

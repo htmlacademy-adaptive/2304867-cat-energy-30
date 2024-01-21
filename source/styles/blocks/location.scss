@@ -1,13 +1,29 @@
-.location iframe {
+.location__image {
+  min-height: 362px;
+  background-image: url("../../images/location_map_mobile.jpg");
+  background-size: cover;
   width: 100%;
-  border: none;
-  display: block;
-  height: 362px;
 
   @media (min-width: $tablet-width) {
-    height: 400px;
+    min-height: 400px;
+    background-image: url("../../images/location_map_tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
   }
 }
+
+.location iframe {
+  width: 100%;
+  border: none;
+  display: block;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+

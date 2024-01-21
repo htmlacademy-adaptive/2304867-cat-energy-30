@@ -31,14 +31,14 @@
           <span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a class="site-list__item-link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link">Подбор программы</a>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__item-link cureent-link">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -94,7 +94,9 @@
           </div>
           <div class="selection__wrapper-contacts container">
             <fieldset class="selection__field option-field">
-              <legend class="option-field__title">Контактные данные (владельца кота)</legend>
+              <legend class="option-field__title line-title">
+                <span class="line-title__alt">Контактные данные (владельца кота)</span>
+              </legend>
               <ul class="option-field__list owner-list">
                 <li class="option-field__item owner-list__item">
                   <label class="option-field-label" for="email-adress">E-mail:*</label>
@@ -108,12 +110,16 @@
             </fieldset>
           </div>
           <div class="selection__comment comment-container container">
-            <p class="comment-container__description">Комментарий</p>
+            <p class="comment-container__description line-title">
+              <span class="line-title__alt">Комментарий</span>
+            </p>
             <textarea class="comment-container__text" name="comment" id="comment-field">Расскажите обо всех повадках кота</textarea>
           </div>
-          <legend class="selection__form-title form-title">Дополнительно</legend>
           <div class="selection__wrapper-extra container">
             <fieldset class="selection__field option-field ">
+              <legend class="selection__form-title form-title line-title">
+                <span class="line-title__alt">Дополнительно</span>
+              </legend>
               <ul class="option-field__list--check">
                 <li class="option-field__item--check">
                   <input class="option-field__check" type="checkbox" name="extra-options" id="sweetener" value="non-sugar" checked>

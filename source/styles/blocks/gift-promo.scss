@@ -1,5 +1,4 @@
 .gift-promo {
-  background-color: $bg-alt-green;
   text-align: center;
   margin: 35px auto;
 
@@ -13,6 +12,10 @@
     width: 245px;
     margin: 0 auto;
   }
+}
+
+.gift-promo__wrapper {
+  background-color: $bg-alt-green;
 }
 
 .gift-promo__description {

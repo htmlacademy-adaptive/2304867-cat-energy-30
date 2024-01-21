@@ -6,3 +6,22 @@
 .site-list__item-link:visited {
   color: inherit;
 }
+
+.cureent-link {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.cureent-link::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    align-self: center;
+    z-index: 1;
+    background-color: $bg-basic-green;
+  }
+}

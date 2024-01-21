@@ -1,10 +1,17 @@
 .owner-list {
+  margin-top: 35px;
+
+  @media (min-width:$tablet-width) {
+    margin-top: 76px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     margin: 0;
     gap: 80px;
     padding: 0;
+    margin-top: 78px;
   }
 }
 
