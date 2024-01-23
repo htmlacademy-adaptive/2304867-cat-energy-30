@@ -8,6 +8,8 @@
 }
 
 .cureent-link {
+  opacity: 1;
+
   @media (min-width: $tablet-width) {
     position: relative;
   }
@@ -24,4 +26,12 @@
     z-index: 1;
     background-color: $bg-basic-green;
   }
+}
+
+.site-list__item-link:hover {
+  opacity: 60%;
+}
+
+.site-list__item-link:active {
+  opacity: 30%;
 }

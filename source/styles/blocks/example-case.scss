@@ -1,5 +1,14 @@
 .example-case {
   background-color: $bg-alt-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    border-top: 1px solid $border-page-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: 0;
+  }
 }
 
 .example-case__text-wrapper {
@@ -94,10 +103,12 @@
   text-transform: uppercase;
   color: #000000;
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    max-width: 174px;
+    text-align: end;
   }
 }

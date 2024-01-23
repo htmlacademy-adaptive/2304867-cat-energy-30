@@ -1,21 +1,25 @@
 .gift-promo {
   text-align: center;
-  margin: 35px auto;
+  margin-top: 35px;
 
   @media (min-width: $tablet-width) {
-    margin: 70px auto 75px;
+    margin-top: 70px;
     text-align: start;
     width: 708px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
 .gift-promo__wrapper {
   background-color: $bg-alt-green;
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+  }
 }
 
 .gift-promo__description {

@@ -254,6 +254,11 @@
             <button class="order-button button" type="button">заказать</button>
           </li>
           <li class="catalog__item catalog__item--extra">
+            <div class="catalog_item-image-plus plus-image">
+              <svg class="plus-image__icon" width="30" height="30">
+                <use href="../../images/icons/stack.svg#icon_plus"></use>
+              </svg>
+            </div>
             <h3 class="catalog__item-title catalog__item-title--extra">Показать еще 100500 товаров</h3>
             <p class="catalog__item-description">На самом деле вкусов гораздо больше!</p>
             <a class="show-more-button button" href="#">показать все</a>
@@ -261,12 +266,14 @@
         </ul>
       </div>
     </section>
-    <div class="extra-promo">
+    <div class="extra-gift-container extra-gift container">
+      <h2 class="extra-gift__title">
+        <span class="extra-gift__title-alt">Дополнительные товары</span>
+      </h2>
+    </div>
+    <div class="extra-promo container">
       <section class="extra-catalog">
-        <div class="extra-catalog__wrapper container">
-          <h2 class="extra-catalog__title">
-          <span class="extra-catalog__title-alt">Дополнительные товары</span>
-          </h2>
+        <div class="extra-catalog__wrapper">
           <ul class="extra-catalog__list">
             <li class="extra-catalog__item extra-item">
               <h3 class="extra-item__title">Сахарозаменитель</h3>
@@ -276,7 +283,7 @@
                 <dd class="extra-product-description__value">200 ₽</dd>
                 </dl>
               </div>
-              <button class="order-button button" type="button">заказать</button>
+              <button class="extra-item__button button" type="button">заказать</button>
             </li>
             <li class="extra-catalog__item extra-item">
               <h3 class="extra-item__title">питьевая вода</h3>
@@ -286,7 +293,7 @@
                 <dd class="extra-product-description__value">50 ₽</dd>
                 </dl>
               </div>
-              <button class="order-button button" type="button">заказать</button>
+              <button class="extra-item__button button" type="button">заказать</button>
             </li>
             <li class="extra-catalog__item extra-item">
               <h3 class="extra-item__title">молоко</h3>
@@ -296,7 +303,7 @@
                 <dd class="extra-product-description__value">100 ₽</dd>
                 </dl>
               </div>
-              <button class="order-button button" type="button">заказать</button>
+              <button class="extra-item__button button" type="button">заказать</button>
             </li>
             <li class="extra-catalog__item extra-item">
               <h3 class="extra-item__title">витамины</h3>
@@ -306,20 +313,21 @@
                 <dd class="extra-product-description__value">300 ₽</dd>
                 </dl>
               </div>
-              <button class="order-button button" type="button">заказать</button>
+              <button class="extra-item__button button" type="button">заказать</button>
             </li>
           </ul>
         </div>
       </section>
     <section class="gift-promo">
-      <div class="gift-promo__wrapper container">
+      <div class="gift-promo__wrapper">
         <img class="gift-promo__icon" src="images/icon_gift.svg" width="78" height="80" alt="Иконка подарка">
         <p class="gift-promo__description">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
   </div>
+  <div class="communication">
     <section class="contacts contacts-alt">
-      <div class="contacts__wrapper container">
+      <div class="contacts__wrapper">
         <b class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</b>
         <p class="contacts__information">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
@@ -328,6 +336,7 @@
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.320472477304122!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1705611894584!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+  </div>
   </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper container">

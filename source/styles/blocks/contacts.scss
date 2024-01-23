@@ -9,17 +9,22 @@
   margin: 0 auto;
   justify-content: space-between;
   padding: 26px 0;
-  width: 280px;
+  max-width: 280px;
 
   @media (min-width: $tablet-width) {
-    width: 628px;
+    max-width: 628px;
     gap: 308px;
     padding: 60px 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 407px;
+    max-width: 565px;
     gap: 87px;
+    position: absolute;
+    background-color: $basic-white;
+    top: 95px;
+    left: 110px;
+    padding: 60px 78px 60px 80px;
   }
 }
 
@@ -31,6 +36,15 @@
   color: #111111;
   text-transform: uppercase;
   width: 50%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 163px;
+  }
 }
 
 .contacts__information {
@@ -40,5 +54,9 @@
 
   @media (min-width: $tablet-width) {
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 157px;
   }
 }
