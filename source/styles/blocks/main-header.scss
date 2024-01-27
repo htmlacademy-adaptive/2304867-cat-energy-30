@@ -2,4 +2,59 @@
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    padding-top: 55px;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 190px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 202px;
+  }
+}
+
+.main-header__logo:hover {
+  opacity: 80%;
+}
+
+.main-header__logo:focus {
+  opacity: 60%;
 }

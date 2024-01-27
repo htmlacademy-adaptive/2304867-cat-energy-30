@@ -1,25 +1,114 @@
+.example-case {
+  background-color: $bg-alt-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    border-top: 1px solid $border-page-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: 0;
+  }
+}
+
+.example-case__text-wrapper {
+  padding: 25px 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 55px 0;
+  }
+}
+
 .example-case__title {
   font-family: "oswald", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.example-case__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 167px;
+  }
+}
+
+.example-case__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-between;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+
+  }
 }
 
 .example-case__item-title {
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example-case__description {
+  margin: 0;
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example-case__item-description {
+  margin: 0;
   font-size: 12px;
   line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example-case__item-description-expenses {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  text-transform: uppercase;
   color: #000000;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 174px;
+    text-align: end;
+  }
 }

@@ -1,0 +1,27 @@
+.social {
+  border-top: 1px solid $border-alt-grey;
+  border-bottom: 1px solid $border-alt-grey;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  list-style: none;
+  gap: 24px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 132px;
+  }
+}
+
+.social__link {
+  align-items: center;
+}

@@ -1,4 +1,7 @@
 .characteristics {
-  font-size: 12px;
-  line-height: 16px;
+  width: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

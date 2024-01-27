@@ -1,7 +1,52 @@
+.extra-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 13px 0 19px;
+  border-top: 1px solid $border-special-grey;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 38px;
+
+    &:first-child {
+      border-top: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 17px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .extra-item__title {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  color: #222222;
+  font-weight: 400;
+  color: $special-dark;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.extra-item__button {
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    margin: 0;
+  }
 }

@@ -1,0 +1,33 @@
+.line-title {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 2px;
+    top: 18px;
+    z-index: 0;
+    background-color: $bg-basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: calc(50% - 50vw);
+      top: 24px;
+    }
+  }
+}
+
+.line-title__alt {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  padding-right: 20px;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+
+  }
+}

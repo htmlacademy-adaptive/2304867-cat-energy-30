@@ -1,6 +1,113 @@
+.advantages {
+  margin: 20px 0 49px;
+
+  @media (min-width: $tablet-width) {
+    margin: 45px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 71px 0 69px;
+  }
+}
+
 .advantages__title {
   font-family: "oswald", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 59px;
+    counter-reset: num;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 31px;
+    padding: 40px 0 57px 0;
+  }
+}
+
+.advantages__item::before {
+  @media (min-width: $tablet-width) {
+    content: counter(num);
+    counter-increment: num;
+    position: absolute;
+    font-size: 280px;
+    line-height: 280px;
+    bottom: 0;
+    color: $bg-basic-grey;
+    left: 118px;
+    z-index: -1;
+    font-family: "Oswald", "Tahoma", sans-serif;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+  width: calc(100% - 60px - 20px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.advantages__item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+

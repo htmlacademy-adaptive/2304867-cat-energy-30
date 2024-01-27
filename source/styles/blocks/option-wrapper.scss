@@ -1,0 +1,9 @@
+.option-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    padding: 0;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
