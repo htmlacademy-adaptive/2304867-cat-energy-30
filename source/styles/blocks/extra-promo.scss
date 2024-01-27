@@ -1,14 +1,11 @@
 .extra-promo {
   padding-top: 36px;
-  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     padding-top: 80px;
-    padding-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 87px;
     display: flex;
     justify-content: space-between;
 

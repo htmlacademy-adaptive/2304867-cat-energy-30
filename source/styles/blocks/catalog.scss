@@ -65,7 +65,8 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding: 0 37px 40px;
+    padding: 10px 37px 40px;
+    background-image: linear-gradient($basic-white 81px, $bg-basic-grey 81px);
   }
 }
 
@@ -142,6 +143,8 @@
 
   @media (min-width: $tablet-width) {
     border: 2px solid $bg-basic-grey;
+    background-image: none;
+    margin-top: 81px;
   }
 }
 

@@ -48,6 +48,8 @@
     margin: 40px 0 21px;
     text-align: start;
     padding: 0 90px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,5 +62,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+  }
+}
+
+.hero__header-image-container {
+  @media (min-width: $tablet-width) {
+
   }
 }

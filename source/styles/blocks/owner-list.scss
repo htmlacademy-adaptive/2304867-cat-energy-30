@@ -1,7 +1,7 @@
 .owner-list {
   margin-top: 35px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 76px;
   }
 
@@ -16,8 +16,46 @@
 }
 
 .owner-list__item {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     flex-grow: 1;
     margin: 0;
+  }
+}
+
+.owner-list__item--email::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../images/icons/stack.svg#icon_email");
+  width: 20px;
+  height: 20px;
+  right: 12px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
+  }
+}
+
+.owner-list__item--phone::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../images/icons/stack.svg#icon_phone");
+  width: 20px;
+  height: 20px;
+  right: 13px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
   }
 }

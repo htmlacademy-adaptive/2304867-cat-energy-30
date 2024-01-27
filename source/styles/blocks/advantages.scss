@@ -39,6 +39,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 37px 59px;
+    counter-reset: num;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,7 +64,21 @@
     gap: 31px;
     padding: 40px 0 57px 0;
   }
+}
 
+.advantages__item::before {
+  @media (min-width: $tablet-width) {
+    content: counter(num);
+    counter-increment: num;
+    position: absolute;
+    font-size: 280px;
+    line-height: 280px;
+    bottom: 0;
+    color: $bg-basic-grey;
+    left: 118px;
+    z-index: -1;
+    font-family: "Oswald", "Tahoma", sans-serif;
+  }
 }
 
 .advantages__description {
